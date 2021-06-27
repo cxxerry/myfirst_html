@@ -1,0 +1,28 @@
+  a{
+    text-decoration:none;
+  }
+  body{
+    float:center;
+    color:black;
+  }
+  input{
+    vertical-align: middle;
+  }
+  .top{
+    display:inline;
+    border-bottom:1px solid gray;
+    font-size: 10px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 2fr 5fr;
+    text-align: center;
+  }
+  .photo{
+    display:block;
+    border-top: 1px solid gray;
+    text-align: center;
+  }
+  .photo p{
+    text-align: center;
+  }
