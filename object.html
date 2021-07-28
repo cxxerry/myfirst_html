@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script =src="colors.js"></script>
+  </head>
+  <body>
+    <h1>Object </h1>
+    <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
+
+    <h2>Create</h2>
+    <script>
+    var coworkers = {           //coworkers 객체 생성하고 데이터 넣기
+      "programmer":"cxxerry",     //programmer는 key
+      "designer":"hoon247"        //designer 는 key
+    };
+
+    document.write("programmer : " +coworkers.programmer+'<br>' );   //객체 데이터를 가져온다
+    document.write("designer :"+coworkers.designer+'<br>');
+    coworkers.bookkeeper ="duru";   //key인 bookkeeper에 duru라는 데이터 추가
+    document.write("bookkeeper :"+coworkers.bookkeeper+'<br>');
+    coworkers["data scientist"] ="taeho";         //이름에 띄어쓰기를 넣고 싶은 경우 //data scientist는 key
+    document.write("data scientist : " +coworkers["data scientist"]+'<br>');
+    </script>
+
+    <h2>Iterate</h2>    //반복문
+    <script>
+    for(var key in coworkers){    //객체 comerker의 key들을 나타낸다
+      document.write(key+' : '+coworkers[key]+'<br>');
+    }
+    </script>
+
+  </body>
+</html>
